@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Using Lucide icons
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,11 +26,13 @@ export default function Navbar() {
 
           {/* Login/Signup Buttons */}
           <div className="ml-4 flex space-x-4">
-            <Link href="/login">
-              <button className="px-4 py-2 text-white border border-green-400 rounded-lg hover:bg-green-600 transition">
-                Login
-              </button>
-            </Link>
+          <Link href="/login">
+  <button className="px-4 py-2 text-white border border-green-400 rounded-lg hover:bg-green-600 transition">
+    Login
+  </button>
+</Link>
+
+
             <Link href="/signup">
               <button className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
                 Sign Up
